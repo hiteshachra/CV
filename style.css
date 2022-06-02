@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&display=swap');
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 20px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+#navbar{
+    position: fixed;
+}
+a{
+    text-decoration: none;
+    color: grey;
+}
+#navbar a{
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    left: -13rem;
+    transition: 0.4s;
+    padding:1.5rem;
+    width: 18rem;
+    text-decoration: none;
+    font-size: 2rem;
+    color: whitesmoke;
+    border-radius: 0 5px 5px 0;
+}
+#navbar a:hover{
+    left:0;
+}
+#homes{
+    top:4rem;
+    background-color: grey;
+}
+#about{
+    top:10rem;
+    background-color: grey;
+}
+#project{
+    top:16rem;
+    background-color: grey;
+}
+#contact{
+    top:22rem;
+    background-color: grey;
+}
+
+.content{
+    margin-left:13rem;
+    margin-top:6rem;
+    color:white;
+    text-align: center;
+}
+.content h1{
+    font-family: 'Baloo Tammudu 2', cursive;
+    font-size:8rem;
+   
+}
+
+
+
+.content h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size:2rem;
+}
+.photo{
+    margin-left:30rem;
+    margin-top:14rem;
+}
+.photo img{
+    height: 120rem;
+    width: 100rem;
+    opacity:0.7;
+}
+.photo img:hover{
+    opacity:1;
+}
+.about{
+    font-family: 'Baloo Tammudu 2', cursive;
+    margin-left: 20rem;
+    margin-top:8rem
+}
+.para{
+    color:white;
+}
+.para h1{
+    font-size: 4rem;
+}
+.para hr{
+    margin-top: 1rem;
+    width:25rem;
+}
+.para p{
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+    margin-top:2rem;
+    font-size:1.5rem;
+    color:grey;
+}
+.skill hr{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width:25rem;
+}
+.skill h1{
+    font-family: 'Baloo Tammudu 2', cursive;
+    margin-top:4rem;
+    color:white;
+    font-size:4rem; 
+}
+.skill p{
+    font-family: 'Montserrat', sans-serif;
+    color:grey;
+    padding-top: 1rem;
+    font-size:1.5rem;
+}
+.resume button{
+    margin-top: 3rem;
+    padding:.8rem;
+    border: none;
+    outline:none;
+    background-color: grey;
+    border-radius: .6rem;
+}
+.resume button a{
+    text-decoration: none;
+    color:white;
+    font-size:1.5rem;
+}
+
+#projects{
+    margin-left: 20rem;
+    margin-top:8rem;
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+.projects{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+.proj-img{
+    margin:10px;
+    height: 200px;
+    border-radius: 15px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.proj-img:hover{
+    opacity: 1;
+}
+
+.contact-me{
+
+    margin-left: 20rem;
+    margin-top:8rem;
+}
+.contact-me h1{
+    font-family: 'Baloo Tammudu 2', cursive;
+    color:white;
+    font-size: 4rem;
+}
+.contact-me p{
+    font-family: 'Montserrat', sans-serif;
+    color:grey;
+    margin-top: 1rem;
+    font-size:2rem;
+}
+.contact-me p i{
+    color:white;
+    margin-top: 1rem;
+    font-size:3rem;
+}
+.contact-me hr{
+    width: 25rem;
+    margin-top: 1rem;
+    
+}
+.footer{
+    margin-bottom:10rem;
+}
+.video , .project-detail-heading{
+    text-align: center;
+}
+.video video{
+    width: 700px;
+    height: 600px;
+}
+.project-detail-heading h1{
+    font-size: 40px;
+    font-family: 'Baloo Tammudu 2', cursive;
+    color: white;
+}
+@media only screen and (max-width: 600px) {
+    #navbar{
+        display: none;
+    }
+    .content{
+        margin-left:3rem;
+        margin-top:6rem;
+        color:white;
+        text-align: center;
+    }
+    .content h1{
+        font-family: 'Baloo Tammudu 2', cursive;
+        font-size:4rem;
+    }
+    .content h3{
+        font-family: 'Montserrat', sans-serif;
+        font-size:1.5rem;
+    }
+    .photo{
+        margin-left:2rem;
+        margin-top:4rem;
+    }
+    .photo img{
+        height: 50rem;
+        width: 40rem;
+    }
+
+
+    .about{
+        font-family: 'Baloo Tammudu 2', cursive;
+        margin-left: 2rem;
+        margin-top:8rem
+    }
+    .para h1{
+        font-size: 2rem;
+    }
+    .para hr{
+        margin-top: .1rem;
+        width:12rem;
+    }
+    .para p{
+        margin-top:1rem;
+        font-size:1rem;
+    }
+    .skill h1{
+        margin-top:2rem;
+        color:white;
+        font-size:2rem; 
+    }
+    .skill p{
+        padding-top: 0.3rem;
+        font-size:1rem;
+    }
+
+    #projects{
+        margin-left: 2rem;
+      
+    }
+    
+
+    .contact-me{
+        margin-left: 2rem;
+    }
+    .contact-me h1{
+        font-size: 2rem;
+    }
+    .contact-me p{
+        font-size:1rem;
+    }
+    .contact-me p i{
+       
+        font-size:2rem;
+    }
+    .contact-me hr{
+        width: 12rem;
+        margin-top: 0.5rem;
+        
+    }
+}
+ @media screen and (min-device-width: 768px) and (max-device-width: 912px) {
+    #navbar{
+        display: none;
+    }
+    .content{
+        margin-left:3rem;
+        margin-top:6rem;
+        color:white;
+        text-align: center;
+    }
+    .content h1{
+        font-family: 'Baloo Tammudu 2', cursive;
+        font-size:4rem;
+    }
+    .content h3{
+        font-family: 'Montserrat', sans-serif;
+        font-size:1.5rem;
+    }
+    .photo{
+        margin-left:2rem; 
+        margin-top:4rem;
+    }
+    .photo img{
+        height: 70rem;
+        width: 60rem;
+    }
+
+
+    .about{
+        font-family: 'Baloo Tammudu 2', cursive;
+        margin-left: 2rem;
+        margin-top:8rem
+    }
+    .para h1{
+        font-size: 3rem;
+    }
+    .para hr{
+        margin-top: .1rem;
+        width:12rem;
+    }
+    .para p{
+        margin-top:1rem;
+        font-size:1.5rem;
+    }
+    .skill h1{
+        margin-top:2rem;
+        color:white;
+        font-size:3rem; 
+    }
+    .skill p{
+        padding-top: 0.3rem;
+        font-size:1.5rem;
+    }
+
+    #projects{
+        margin-left: 2rem;
+      
+    }
+    
+
+    .contact-me{
+        margin-left: 2rem;
+    }
+    .contact-me h1{
+        font-size: 3rem;
+    }
+    .contact-me p{
+        font-size:1.5rem;
+    }
+    .contact-me p i{
+       
+        font-size:2rem;
+    }
+    .contact-me hr{
+        width: 12rem;
+        margin-top: 0.5rem;
+        
+    }
+}

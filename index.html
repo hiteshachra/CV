@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hi, I am Hitesh Kumar Achra, A BCA Grad. I'm a Web and Mobile Application Developer.">
+    <meta name="keywords" content="hitesh kumar achra , hitesh ,achra , kumar, full stack developer,web developer,website ,android, ios,app developer">
+    <link rel="shortcut icon" href="images/hi.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <title>HITESH KUMAR ACHRA</title>
+</head>
+
+<body style=" background-color: black;">
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal" >
+
+    <span class="close">&times;</span>
+    <video id="videopopup" style="width:100%; height:500px;" autoplay muted src=""></video>
+  
+
+</div>
+
+
+    <div id="navbar" class="sidenav">
+        <a href="#home" id="homes"><i class="fas fa-home"></i>HOME</a>
+        <a href="#aboutme" id="about"> <i class="fas fa-male"></i> ABOUT</a>
+        <a href="#projects" id="project"><i class="fas fa-eye"></i>PROJECTS</a>
+        <a href="#contactme" id="contact"><i class="fas fa-id-card"></i>CONTACT</a>
+    </div>
+
+    <div class="content" id="home">
+        <h1>Hitesh Kumar Achra</h1>
+        <h3>FULL &nbsp STACK &nbsp DEVELOPER</h3>
+    </div>
+
+    <div class="photo">
+        <img src="images/bg1-removebg-preview.png" alt="">
+    </div>
+    <div id="aboutme" class="about">
+        <div class="para">
+            <h1>About Me</h1>
+            <hr>
+            <p>I'm a Full Stack Developer, with 1.3 Years of experience in, <br> Website and App Development, <br> I have completed my BCA from Sherwood College of Professional
+                Management,<br>
+                Indira Nagar Sector-25, Affiliated to Lucknow University. <br>
+                I have completed my schooling from Dr. Virendra Swarup Public School,  Mahanagar Lucknow.</p>
+        </div>
+        <div class="skill">
+            <h1>My Skills</h1>
+            <hr>
+            <p>Hyper Text markup language (HTML)</p>
+            <p>Cascading Style Sheets (CSS)</p>
+            <p>Java Script</p>
+            <p>jQuery</p>
+            <p>Hypertext Preprocessor (PHP)</p>
+            <p>My SQL</p>
+            <p>Bootstrap</p>
+            <p>Wordpress</p>
+            <p>Magento</p>
+            <p>Flutter</p>
+
+
+        </div>
+        <div class="resume">
+            <button><a href="Hitesh.pdf" target="_blank">View Resume</a></button>
+        </div>
+    </div>
+
+    <div id="projects">
+        <div class="para">
+            <h1>Projects</h1>
+            <hr>
+        </div>
+       <div class="projects">
+        
+            <img id="sogha" class="proj-img" src="images/1.png" alt="">
+         
+         
+        <img   id="coffee" class="proj-img" src="images/2.png" alt="">
+        
+        <img  id="interior" class="proj-img" src="images/3.png" alt="">
+       
+        <img   id="scandit" class="proj-img" src="images/4.png" alt="">
+    
+        <img  id="tooaleta" class="proj-img" src="images/5.png" alt="">
+       
+        <img  id="psio" class="proj-img" src="images/6.png" alt="">
+  
+        <img  id="house" class="proj-img" src="images/7.png" style="border: 1px Solid white;" alt="">
+        
+       </div>
+    </div>
+
+    <div class="contact-me" id="contactme">
+        <h1>Contact Me</h1>
+        <hr>
+         <p><i class="fas fa-phone-square"></i>  &nbsp <a href="tel:7007708965">+91 7007708695</a></p>
+       <p> <i class="fas fa-envelope"></i> &nbsp <a href="mailto: ah7860644225@gmail.com">ah7860644225@gmail.com</a> </p>
+       <p> <i class="fab fa-linkedin-in"></i> &nbsp <a href="https://www.linkedin.com/in/hitesh-achra-358304193">Hitesh Kumar Achra</a> </p>
+       <p> <i class="fab fa-facebook"></i> &nbsp <a href="https://www.facebook.com/hitesh.achra.3">Hitesh Kumar Achra</a> </p>
+       <p class="footer"> <i class="fas fa-location-arrow"></i> &nbsp Lucknow, Uttar Pradesh</p>
+       
+       
+    </div>
+    
+
+    <script>
+        
+        var modal = document.getElementById("myModal");
+        var videosrc=document.querySelector('#videopopup');
+
+
+        document.querySelector("#sogha").addEventListener("click", function(e) {
+    videosrc.setAttribute('src','images/Sogha qatar.mp4');
+    modal.style.display = "block";
+});
+document.querySelector("#coffee").addEventListener("click", function(e) {
+    videosrc.setAttribute('src','images/COFFEE.mp4');
+    modal.style.display = "block";
+});
+document.querySelector("#interior").addEventListener("click", function(e) {
+    videosrc.setAttribute('src','images/interiro.mp4');
+    modal.style.display = "block";
+});
+document.querySelector("#scandit").addEventListener("click", function(e) {
+    videosrc.setAttribute('src','images/flu.mp4');
+    modal.style.display = "block";
+});
+document.querySelector("#tooaleta").addEventListener("click", function(e) {
+    videosrc.setAttribute('src','images/tooaleta.mp4');
+    modal.style.display = "block";
+});
+document.querySelector("#psio").addEventListener("click", function(e) {
+    videosrc.setAttribute('src','images/psio.mp4');
+    modal.style.display = "block";
+});
+document.querySelector("#house").addEventListener("click", function(e) {
+    videosrc.setAttribute('src','images/hod.mp4');
+    modal.style.display = "block";
+});
+        var span = document.getElementsByClassName("close")[0];
+        
+      
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
+</body>
+
+</html>
