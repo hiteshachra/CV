@@ -47,7 +47,7 @@
         <div class="para">
             <h1>About Me</h1>
             <hr>
-            <p>I'm a Full Stack Developer, with 1.3 Years of experience in, <br> Website and App Development, <br> I have completed my BCA from Sherwood College of Professional
+            <p>I'm a Full Stack Developer, with <span id="years"> </span> Years of experience in, <br> Website and App Development, <br> I have completed my BCA from Sherwood College of Professional
                 Management,<br>
                 Indira Nagar Sector-25, Affiliated to Lucknow University. <br>
                 I have completed my schooling from Dr. Virendra Swarup Public School,  Mahanagar Lucknow.</p>
@@ -112,6 +112,25 @@
     
 
     <script>
+        var date1=new Date(2021,4,01);//Remember, months are 0 based in JS
+var date2=new Date();
+var year1=date1.getFullYear();
+var year2=date2.getFullYear();
+var month1=date1.getMonth();
+var month2=date2.getMonth();
+if(month1===0){ //Have to take into account
+  month1++;
+  month2++;
+}
+var numberOfMonths = (year2 - year1) * 12 + (month2 - month1) + 1;
+
+function ParseFloat(str,val) {
+    str = str.toString();
+    str = str.slice(0, (str.indexOf(".")) + val + 1);
+    return Number(str);  
+}
+var totalYears = ParseFloat(numberOfMonths/12,1);
+  document.getElementById("years").innerHTML = totalYears;       
         
         var modal = document.getElementById("myModal");
         var videosrc=document.querySelector('#videopopup');
